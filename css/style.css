@@ -1,0 +1,193 @@
+/* GENERAL STYLES */
+body {
+	font-family: Arial, San-Serif;
+	font-size: 100%;
+	background:black;
+}
+h1{
+	color: white;
+
+}
+h2{
+	color: white;
+
+}
+ul {
+	margin: 0;
+	color: white;
+	padding: 0;
+}
+ul li {
+	list-style-type: none;
+	color: white;
+}
+a {
+	color: white;
+	text-decoration: none;
+}
+p {
+	color: white;
+	font-size: 13px;
+	line-height: 1.3em;
+}
+.container {
+	margin: 0 auto;
+	width: 960px;
+}
+
+/* HEADER */
+
+.header h1,
+.header h2 {
+	color: greenyellow;
+	text-align: center;
+}
+#head1, #head2 {
+	display: hidden;
+}
+
+/* NAVIGATION */
+.page-navigation {
+	background-color:lightblue;
+	border-color: #101010;
+	min-height: 64px;
+}
+.page-navigation li {
+	float: left;
+	width: 100px;
+}
+.page-navigation a {
+	display: block;
+	color: white;
+	line-height: 4em;
+	font-weight: bold;
+	text-align: center;
+}
+.page-navigation li a:hover {
+	color: violet;
+	background-color: white;
+}
+
+/* LOGIN FORM */
+.login {
+	padding: 15px 0;
+	float: right;
+}
+.login input[type="text"],
+.login input[type="password"] {
+	padding: 5px;
+	margin-right: 5px;
+	border: 1px solid transparent;
+	border-radius: 5px;
+	outline: none;
+}
+.login input[type="submit"] {
+	padding: 5px 15px;
+	border: 1px solid lightgrey;
+	border-radius: 5px;
+}
+
+#button{
+	width:50px;
+	height:50px;
+	border-radius:25px;
+	background:violet;
+	position: fixed;
+	right: 30px;
+	bottom: 30px;
+	z-index: 10;
+	cursor: pointer;
+	color: white;
+	text-align: center;
+	font-size:25pt;
+	font-weight:bold;
+}
+#button{
+	background:white ;
+	color: lightblue;
+	font-size:35px;
+}
+
+/* MAIN PART */
+.collections {
+	overflow: auto;
+}
+.collection-title {
+	padding-bottom: 5px;
+	border-bottom: 1px solid #777;
+	font-size: 36px;
+}
+.collection-title small {
+	color: #777;
+	font-size: 70%;
+}
+.collection-item-outer {
+	display: inline-block;
+	float: left;
+	padding-left: 5px;
+	padding-right: 5px;
+	width: 33.33%;
+	box-sizing: border-box;
+}
+.collections > div:first-child {
+	padding-left: -1px;
+	padding-right: -1px;
+}
+.collections > div:last-child {
+	padding-right: -1px;
+	padding-left: -1px;
+}
+.collection-item {
+	border: 1px solid #959595;
+}
+.collection-item img,
+.collection-item video {
+	width: 100%;
+}
+.collection-text {
+	padding: 0 20px 20px 20px;
+}
+.collection-text h3 {
+	color: lightblue;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.collection-text p {
+	color: lightblue;
+	overflow: hidden;
+
+}
+.collection-text button {
+	padding: 10px;
+	border: 1px solid transparent;
+	border-radius: 5px;
+	outline: none;
+}
+
+/* FOOTER */
+.footer {
+	background-color: lightblue;
+	color: white;
+	padding: 20px 0;
+	margin-top: 30px;
+}
+.card{
+  position: relative;
+  height: 300px;
+  width: 300px;
+  perspective: 1000px;
+}
+.front, .back {
+  top: 0;
+  left: 0;
+  position: absolute;
+  transition: 1s;
+  backface-visibility: hidden;
+
+}
+.back{
+  transform: rotateY(180deg);
+}
+.card:hover .front{transform: rotateY(180deg);}
+.card:hover .back{transform: rotateY(360deg);}
